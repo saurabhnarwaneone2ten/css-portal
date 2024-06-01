@@ -1,2 +1,2 @@
 streamlit==1.16.0
-clipboard==0.0.4
+xerox==0.4.1
