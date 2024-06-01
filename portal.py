@@ -1,5 +1,4 @@
 import streamlit as st
-import xerox
 
 st.set_page_config(
     page_title = "CSS Portal",
@@ -266,8 +265,4 @@ input,textarea {{max-width:100%;}}
 
 
 
-if st.button("Copy CSS"):
-    
-	xerox.copy(code)
-
-	st.success("Text copied to clipboard!")
+st.download_button("Download CSS Text", code, "CSS Text", mime = "text/plain")
